@@ -65,11 +65,12 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(x) {
-    console.log(x.length)
-    return x.length
+function is31Flavors(originalFlavors) {
+    if (originalFlavors.length === 31) {
+        console.log(originalFlavors.length === 31)
+        return originalFlavors.length === 31;
+    }
 }
-// console.log(is31Flavors(originalFlavors))
 is31Flavors(originalFlavors)
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -88,7 +89,6 @@ function addFlavor(x) {
     x.unshift("Rainbow Sherbert")
     console.log(x)
     return x
-    /*your code here*/
 }
 addFlavor(originalFlavors)
 
@@ -122,7 +122,7 @@ Use the getFlavorByIndex function below to do the following:
 
 function getFlavorByIndex(x, i) {
     i = x.length
-    console.log(x[])
+    console.log(x[i])
     /*your code here*/
 }
 getFlavorByIndex(originalFlavors, 2)
@@ -141,11 +141,11 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/) {
+function removeFlavorByName(originalFlavors) {
     /*your code here*/
 }
 
-
+removeFlavorByName(originalFlavors)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 July 7th is "World Chocolate Day" and Baskin Robins wants to create promotional materials highlighting all of their chocolate flavors. 
