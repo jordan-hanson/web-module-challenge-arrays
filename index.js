@@ -67,7 +67,7 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 function is31Flavors(originalFlavors) {
     if (originalFlavors.length === 31) {
-        console.log(originalFlavors.length === 31)
+        // console.log(originalFlavors.length === 31)
         return originalFlavors.length === 31;
     }
 }
@@ -87,7 +87,7 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(x) {
     x.unshift("Rainbow Sherbert")
-    console.log(x)
+    // console.log(x)
     return x
 }
 addFlavor(originalFlavors)
@@ -105,7 +105,7 @@ Use the removeLastFlavor function below to do the following:
 
 function removeLastFlavor(x) {
     x.pop("Vanilla Burnt Almond")
-    console.log(x)
+    // console.log(x)
     return x
 }
 removeLastFlavor(originalFlavors)
@@ -120,10 +120,9 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(x, i) {
-    i = x.length
-    console.log(x[i])
-    /*your code here*/
+function getFlavorByIndex(data, index) {
+    console.log(data[index])
+    return data[index]
 }
 getFlavorByIndex(originalFlavors, 2)
 
